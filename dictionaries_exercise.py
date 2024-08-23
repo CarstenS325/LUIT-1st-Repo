@@ -15,7 +15,7 @@ sample_dict = {
 while True:
     word = input('Enter a word in English or EXIT: ')  # Prompt the user to enter a word or 'EXIT'
     if word in sample_dict: # Check if the entered word is a key in the dictionary 'sample_dict'
-        print(sample_dict[word])   # Print the value associated with the entered word
+        print('Translation: ',sample_dict[word])   # Print the value associated with the entered word
     elif word == 'EXIT': # Check if the entered word is 'EXIT'
         print('Bye!')    # Print a goodbye message
         break
