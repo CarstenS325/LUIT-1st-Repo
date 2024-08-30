@@ -12,5 +12,5 @@ def lambda_handler(event, context):
     buckets = response['Buckets']
 
     return {
-        'body':  json.dumps(bucket_names)
+        'body':  json.dumps(bucket_names, indent=4)
     }
