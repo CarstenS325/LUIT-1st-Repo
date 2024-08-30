@@ -3,13 +3,13 @@ import boto3
 
 def lambda_handler(event, context):
     print(event)
-    cloudfront - boto3.client('cloudfront')
+    cloudfront = boto3.client('cloudfront')
 
-    response - cloudfront.list_distributions()
+    response = cloudfront.list_distributions()
 
-    distributionList - response["DistributionList"]
+    distributionList = response["DistributionList"]
 
-    items - distributionList['Items']
+    items = distributionList['Items']
 
     distribution_ids = []
 
